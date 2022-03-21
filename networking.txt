@@ -1,0 +1,58 @@
+    1-Explain the main difference between OSI model and TCP/IP model.
+    2-Explain the application service layers and what happen when you write your url and click enter.
+    3-Explain what is a domain name and the relation between the DNS and the @IP address.
+    4-Explain the TCP interconnection between your local host and the server.
+    5-How data transfer over internet (TCP Packet)
+    
+1-Explain the main difference between OSI model and TCP/IP model.
+
+    The biggest difference between the two models is that the OSI model segments multiple functions that the TCP/IP model groups into single layers. This is true of both the application and network access layers of the TCP/IP model, which contain multiple layers outlined within the OSI model.
+
+This is a significant difference because it can make it more difficult to troubleshoot issues or enhance performance when you are using the TCP/IP model. With the OSI model, for example, you can focus specifically on the application layer, presentation layer, or session layer to figure out why data is not coming out the way you expect.
+
+With the TCP/IP model, on the other hand, the functions of these three layers are all combined in the application layer. In other words, while someone may say, “There is a problem in the application layer,” someone thinking in terms of the OSI model may get confused, wondering, “OK, but which part of the application layer?”
+
+OSI Model layers:              vs            TCP/IP model layers:
+Physical layer. 
+Datalink layer.                              Network access layer
+
+Network layer.                               Internet layer
+                        
+Transport layer.                             Transport layer
+
+Session layer. 
+Presentation layer.                          Application layer
+Application layer. 
+
+2-Explain the application service layers and what happen when you write your url and click enter.
+
+In the application layer, an application, such as an internet browser, gets the data and a user can then interact with it.
+when i click enter the act of pressing passes from physical layer to application layer.
+
+3-Explain what is a domain name and the relation between the DNS and the @IP address.
+
+An IP address is an address assigned to any computer (including servers) to identify it on a given network.
+ A DNS address is a Domain Name Service which is used to convert alphabeticreferences into a server's IP address generally for hosting services.
+ DNS like facebook.com and facebook has ip adress.
+ 
+4-Explain the TCP interconnection between your local host and the server.
+
+The actual process for establishing a connection with the TCP protocol is as follows:
+
+First, the requesting client sends the server a SYN packet or segment (SYN stands for synchronize) with a unique, random number. This number ensures full transmission in the correct order (without duplicates).
+If the server has received the segment, it agrees to the connection by returning a SYN-ACK packet (ACK stands for acknowledgment) including the client's sequence number plus 1. It also transmits its own sequence number to the client.
+Finally, the client acknowledges the receipt of the SYN-ACK segment by sending its own ACK packet, which in this case contains the server's sequence number plus 1. At the same time, the client can already begin transferring data to the server.
+
+5-How data transfer over internet (TCP Packet)
+
+TCP/IP uses the client-server model of communication in which a user or machine (a client) is provided a service, like sending a webpage, by another computer (a server) in the network.
+
+
+  
+
+
+
+
+
+
+
